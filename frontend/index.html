@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Escrow</title>
+  </head>
+  <body>
+    <div class="container" id="loginPage">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form">
+            <h2 class="title">Sign in</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <input type="submit" value="Login" class="btn solid" id="loginButton" />
+            <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+          <form action="#" class="sign-up-form">
+            <h2 class="title">Sign up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <input type="submit" class="btn" value="Sign up" />
+            <p class="social-text">Or Sign up with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>New here ?</h3>
+            <p>
+               Don't have an account yet ? Sign up and get access to all our services.
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              Sign up
+            </button>
+          </div>
+          <img src="img/log.svg" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>One of us ?</h3>
+            <p>
+              Already made an account here? Sign in and get access to all our services.
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              Sign in
+            </button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+     <!-- Choice Page -->
+    <div id="choicePage" class="hidden">
+        <h2 class="h22">Choose your role</h2>
+        <button class="bttn" id="buyerButton">Sign up as Buyer</button>
+        <button class="bttn" id="sellerButton">Sign up as Seller</button>
+        <button class="bttn" id="cancelChoiceButton">Cancel</button>
+    </div>
+
+   <!-- Buyer Signup Page -->
+    <div id="buyerSignupPage" class="hidden">
+        <h2 class="h22">Buyer Signup</h2>
+        <form id="buyerSignupForm" class="frmm">
+            <label for="buyerUsername">Username:</label>
+            <input class="inp" type="text" id="buyerUsername" name="buyerUsername" required>
+            <label for="byerEmail">Password:</label>
+            <input class="inp"  type="password" id="buyerEmail" name="buyerEmail" required>
+            <button class="bttn" type="submit">Sign Up</button>
+            <button class="bttn" type="button" id="cancelBuyerButton">Cancel</button>
+        </form>
+    </div>
+
+      <!-- Seller Signup Page -->
+    <div id="sellerSignupPage" class="hidden">
+        <h2 class="h22">Seller Signup</h2>
+        <form id="sellerSignupForm" class="frmm">
+            <label for="sellerUsername">Username:</label>
+            <input class="inp"  type="text" id="sellerUsername" name="sellerUsername" required>
+            <label for="sellerEmail">Password:</label>
+            <input class="inp" type="password" id="sellerEmail" name="sellerEmail" required>
+            <button class="bttn" type="submit">Sign Up</button>
+            <button class="bttn" type="button" id="cancelSellerButton">Cancel</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
